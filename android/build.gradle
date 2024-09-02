@@ -1,0 +1,48 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 23
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "26.1.10909125"
+        kotlinVersion = "1.9.22"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://mavenrepo.compathnion.com/artifactory/compathnion-libs-release"
+            credentials {
+                username 'sdkusers'
+                password 'UGYurEvYEkSFMU7V'
+            }
+        }
+//        maven {
+//            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+//            authentication {
+//                basic(BasicAuthentication)
+//            }
+//            credentials {
+//                // do not change the username below.
+//                // this should always be `mapbox` (not your username).
+//                username = 'mapbox'
+//                // use the secret token you stored in gradle.properties as the password
+//                password = "sk.eyJ1IjoibGluaHRhaGsiLCJhIjoiY2xhcnRrMHFrMXc2ZzNwdDcwaHp3eHYybyJ9.Dx0AEgAJJI4JsTJ2-KRc9Q"
+//            }
+//        }
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"

@@ -1,0 +1,1 @@
+declare module "cpn-client-sdk-js";

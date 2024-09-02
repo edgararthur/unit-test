@@ -1,0 +1,44 @@
+{
+  "dsd-4s-uat": {
+    "basedUrl": "https://dsd-4s-uat.compathnion.com/",
+    "clientId": "57926005391646232885555821830784",
+    "clientSecret": "01281474024179296683655389742266",
+    "registrationKey": "haSYcvEpXJqTA6qW"
+  },
+  "sdp-dev-construction": {
+    "basedUrl": "https://sdp-dev-construction.compathnion.com/",
+    "clientId": "24875408866423697649827070378217",
+    "clientSecret": "da875e9419aebaea816282a75aa63a3a",
+    "registrationKey": "1iSHIoKgB09F98Oh"
+  },
+  "sdp-trial-bl": {
+    "basedUrl": "https://sdp-trial-bl.compathnion.com/",
+    "venueCode": "",
+    "clientId": "77832914984513594367081635714976",
+    "clientSecret": "1411c0a55717a34b42508a9809acc7ad",
+    "icon": "https://sdp-trial-bl.compathnion.com/logo.png",
+    "registrationKey": "4vU5m0sMnDbZej8T"
+  },
+  "cgc-lokmachau-uat": {
+    "basedUrl": "https://cgc-lokmachau-uat.compathnion.com/",
+    "clientId": "73916226496851485847208471991143",
+    "clientSecret": "d857edc52466155aecda15e5eca95374",
+    "registrationKey": "1iSHIoKgB09F98Oh"
+  },
+  "hoplee-kaitak-uat": {
+    "basedUrl": "https://hoplee-kaitak-uat.compathnion.com/",
+    "clientId": "35379729721148055734040363619110",
+    "clientSecret": "4d0e11d3506fc5c0562a99b5df69c238",
+    "registrationKey": "1iSHIoKgB09F98Oh"
+  },
+  "aecom-staging": {
+    "basedUrl": "https://aecom-staging.compathnion.com/",
+    "clientId": "65139375825567916696108394773592",
+    "clientSecret": "f636582cea24634d0eed5cf9d96c3947"
+  },
+  "aecom": {
+    "basedUrl": "https://aecom.compathnion.com/",
+    "clientId": "65139375825567916696108394773592",
+    "clientSecret": "f636582cea24634d0eed5cf9d96c3947"
+  }
+}

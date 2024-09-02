@@ -1,0 +1,55 @@
+stages:
+  - build
+  - test
+  - deploy
+  - changelog
+
+install_dependencies:
+  stage: build
+  script:
+    - npm ci
+
+compile_app:
+  stage: build
+  script:
+    - npm run start
+    - npm run build:android
+    - npm run build:ios
+
+unit_tests:
+  stage: test
+  script:
+    - npm test
+
+integration_test:
+  stage: test
+  script:
+    - npm run test:integration
+
+e2e_test:
+  stage: test
+  script:
+    - npm run test:e2e
+
+generate_changelog:
+  stage: changelog
+  script:
+    - echo "Generating changelog for July and August..."
+    - git log --since="2024-07-01" -- until="2024-08-31" --pretty=format:"%h - %an, %ar : %s" > changelog_Jul_Aug.txt
+    artifacts:
+      paths:
+        - changelog_Jul_Aug.txt
+
+deploy_android:
+  stage: deploy
+  script:
+    - fastlane android deploy
+  dependencies:
+    - pre_deploy_checks
+
+deploy_ios:
+  stage: deploy
+  script:
+    - fastlane ios deploy
+  dependencies:
+    -pre_deploy_checks
