@@ -46,4 +46,4 @@ In **packages.json**:
 }
 ```
 
-- Section `scripts`: Find the item `"prepare"`, and change it to `"build-lib"`
+- Section `scripts`: Find the item `"prepare"`, and change it to `"build-lib"`# unit-test
